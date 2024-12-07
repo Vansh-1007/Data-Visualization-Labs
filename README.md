@@ -208,3 +208,116 @@ This lab was implemented using the following libraries:
 3.python mtcars_analysis.py
 4.python datasaurus_visualization.py
 
+# Lab 3: Exploring Univariate and Bivariate Data Visualization  
+
+## **Objective**  
+The objective of this lab is to explore and visualize univariate and bivariate relationships in the **Movielens 100k dataset**, focusing on movie ratings, user demographics, and genre popularity.  
+
+---
+
+## **Dataset Description**  
+The **Movielens 100k dataset** is a benchmark dataset widely used in recommender systems research. It contains:  
+- **Ratings:** 100,000 ratings (1-5) provided by 943 users for 1,682 movies.  
+- **Users:** Each user has rated at least 20 movies and has demographic attributes such as age, gender, occupation, and ZIP code.  
+- **Movies:** Each movie is associated with one or more genres.  
+
+---
+
+## **Key Features**
+| **Attribute**  | **Description** |
+|-----------------|-----------------|
+| `user_id`       | Unique identifier for each user. |
+| `movie_id`      | Unique identifier for each movie. |
+| `rating`        | Movie rating (integer between 1 and 5). |
+| `timestamp`     | When the rating was provided. |
+| `age`           | User's age group. |
+| `gender`        | User's gender (M/F). |
+| `occupation`    | User's occupation. |
+| `zip_code`      | User's ZIP code. |
+| `genres`        | Genres associated with each movie. |
+
+---
+
+## **Visualization Questions**  
+### **Univariate Analysis**  
+1. What is the average rating for each movie genre?  
+2. Which genres are the most popular based on the number of ratings received?  
+
+### **Bivariate Analysis**  
+3. Which movies (Top-10) have received the highest number of ratings?  
+4. Are there significant differences in preferences for different movie genres between male and female users?  
+5. Do male or female users rate more movies on average?  
+6. Which movies have the highest average ratings within each genre?  
+7. How do ratings vary across different user age groups?  
+8. How do ratings vary across different user occupations?  
+9. Which genres are preferred by different age groups?  
+10. How do user preferences evolve over time? Can we observe any shifts in genre popularity?  
+
+---
+
+## **Analysis Overview**  
+
+### **Univariate Analysis**  
+- **Average Rating for Each Genre:**  
+  - Bar plots were used to display the average ratings for genres.  
+
+- **Popularity of Genres (Number of Ratings):**  
+  - A horizontal bar plot visualized the number of ratings for each genre.  
+
+### **Bivariate Analysis**  
+- **Top-10 Movies with the Most Ratings:**  
+  - A sorted bar plot identified the most rated movies.  
+
+- **Gender Preferences for Genres:**  
+  - Grouped bar plots compared male and female preferences for various genres.  
+
+- **Average Ratings by Gender:**  
+  - Calculated the average number of movies rated by male and female users.  
+
+- **Highest-Rated Movies by Genre:**  
+  - Filtered and plotted the top-rated movies for each genre.  
+
+- **Ratings by Age Groups:**  
+  - Boxplots showed the distribution of ratings across different age groups.  
+
+- **Ratings by Occupation:**  
+  - Grouped bar plots visualized how ratings varied across occupations.  
+
+- **Age-Group Preferences for Genres:**  
+  - Heatmaps displayed genre preferences by age groups.  
+
+- **Genre Popularity Over Time:**  
+  - Line charts tracked the number of ratings per genre across time.  
+
+---
+
+## **Results and Insights**  
+1. **Most Popular Genres:**  
+   - Action, Drama, and Comedy were the most rated genres.  
+2. **Gender-Based Preferences:**  
+   - Male users rated Action and Sci-Fi movies more, while female users preferred Drama and Romance.  
+3. **Age-Based Patterns:**  
+   - Older age groups rated Drama and Western genres more, while younger users rated Action and Sci-Fi more.  
+4. **Top-Rated Movies:**  
+   - Some lesser-known movies within niche genres had the highest average ratings.  
+5. **Time Trends:**  
+   - Over time, Comedy and Romance ratings showed a steady increase in popularity.  
+
+---
+
+## **Dependencies**
+This analysis requires the following Python libraries:  
+- `pandas`  
+- `numpy`  
+- `matplotlib`  
+- `seaborn`  
+
+Install the required dependencies using the command:  
+```bash
+pip install -r requirements.txt
+git clone https://github.com/Vansh-1007/Data-Visualization-Labs
+cd Data-Visualization-Labs/Lab3
+pip install -r requirements.txt
+python movielens_analysis.py
+
+
