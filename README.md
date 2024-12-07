@@ -88,8 +88,8 @@ This lab was implemented using the following libraries:
 ## **Usage Instructions**
 1. Clone the repository:
    ```bash
-   git clone <repo-link>
-   cd data-visualization-labs/Lab1
+   git clone <https://github.com/Vansh-1007/Data-Visualization-Labs>
+   cd Data-Visualization-Labs
 2.pip install -r requirements.txt
 3.python analysis.py
 
