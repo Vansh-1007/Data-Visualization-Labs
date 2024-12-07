@@ -320,4 +320,101 @@ cd Data-Visualization-Labs/Lab3
 pip install -r requirements.txt
 python movielens_analysis.py
 
+---------
+# Lab 4: Exploring and Visualizing NIRF Rankings 2024  
+
+## **Objective**  
+The objective of this lab is to explore and visualize the **NIRF 2024 Overall Rankings** dataset, providing insights into the distribution of ranks, scores, and the performance of institutions across different states and zones in India. This lab also explores the concept of misleading visualizations through the "Lie Factor."  
+
+---
+
+## **Dataset Description**  
+The **NIRF 2024 Overall Ranking Dataset** evaluates higher education institutions in India based on multiple performance parameters, such as:  
+- **Teaching, Learning, and Resources (TLR)**  
+- **Research and Professional Practice (RP)**  
+- **Graduation Outcomes (GO)**  
+- **Outreach and Inclusivity (OI)**  
+- **Perception (PR)**  
+
+### **Key Features of the Dataset**  
+| **Attribute**   | **Description**                                                                 |
+|------------------|---------------------------------------------------------------------------------|
+| `Institute ID`   | Unique identifier for each institution.                                        |
+| `Name`           | Name of the institution.                                                      |
+| `City`           | City in which the institution is located.                                     |
+| `State`          | State where the institution is situated.                                      |
+| `Score`          | Overall score of the institution based on performance indicators.             |
+| `Rank`           | Overall rank of the institution based on the calculated score.                |
+
+### **New Column: Zone / Zonal Region**  
+Based on the state, each institution is categorized into one of the following six zones:  
+1. **Northern Zone:** Chandigarh, Delhi, Haryana, Himachal Pradesh, Jammu and Kashmir, Ladakh, Punjab, Rajasthan  
+2. **North Eastern Zone:** Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura  
+3. **Central Zone:** Chhattisgarh, Madhya Pradesh, Uttarakhand, Uttar Pradesh  
+4. **Eastern Zone:** Bihar, Jharkhand, Odisha, West Bengal  
+5. **Western Zone:** Dadra and Nagar Haveli and Daman and Diu, Goa, Gujarat, Maharashtra  
+6. **Southern Zone:** Andhra Pradesh, Karnataka, Kerala, Puducherry, Tamil Nadu, Telangana, Andaman and Nicobar  
+
+---
+
+## **Visualization Questions**  
+### **State-Level Analysis**  
+1. Among the top 5 states, which state has the highest number of ranked institutions in the NIRF rankings?  
+2. Which states should the government focus on to improve their presence in the top 100 NIRF rankings? Identify states that could benefit from increased investment in higher education.  
+
+### **Zonal Analysis**  
+3. Which zone has the highest representation in the NIRF rankings?  
+
+### **Conceptual Exploration: Lie Factor**  
+4. Create two visualizations of the same data to discuss the “Lie Factor” and explain how the visualization could mislead viewers.  
+
+### **Score Distribution**  
+5. Visualize the distribution of scores among all institutions.  
+
+---
+
+## **Analysis Overview**  
+
+### **State-Level Insights**  
+- **Top 5 States with Highest Number of Ranked Institutions:**  
+  - A horizontal bar chart highlights states with the highest representation in the rankings.  
+- **States Needing Government Focus:**  
+  - A scatter plot identifies states with fewer ranked institutions but high potential for improvement through investment.  
+
+### **Zonal Analysis**  
+- **Zone Representation:**  
+  - A pie chart and grouped bar chart depict the number of ranked institutions in each zone.  
+
+### **Lie Factor Analysis**  
+- **Misleading Visualizations:**  
+  - Side-by-side visualizations (e.g., distorted axes, exaggerated scaling) illustrate how the same data can lead to different interpretations.  
+
+### **Score Distribution**  
+- **Distribution Plot:**  
+  - A histogram and box plot show the spread of scores among institutions, identifying outliers and performance trends.  
+
+---
+
+## **Results and Insights**  
+1. **Top 5 States:**  
+   - Tamil Nadu, Maharashtra, and Karnataka lead in the number of ranked institutions.  
+2. **States to Focus On:**  
+   - States with fewer ranked institutions, like Bihar and northeastern states, could benefit from targeted investment.  
+3. **Zone Representation:**  
+   - The Southern Zone has the highest representation, followed by the Northern and Western Zones.  
+4. **Score Trends:**  
+   - The majority of institutions have scores clustered around the mid-range, with a few institutions achieving exceptionally high scores.  
+
+---
+
+## **Dependencies**  
+This analysis requires the following Python libraries:  
+- `pandas`  
+- `numpy`  
+- `matplotlib`  
+- `seaborn`  
+
+Install the required dependencies using the following command:  
+```bash
+pip install -r requirements.txt
 
